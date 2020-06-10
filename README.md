@@ -76,7 +76,7 @@ Após realizar o download extraia o diretório **sonarqube-7.8** do arquivo **.z
 
 Com o diretório **sonarqube-7.8** aberto acesse o diretório **bin**, dentro do diretório **bin** abra o subdiretório correspondente ao seu sistema operacional:
 
-<img src="./imagens/exemplo-2.png" style="float: left"/>
+<img src="imagens/exemplo-1.png" style="float: left"/>
 
 Nas versões **Linux** ou **MacOs** execute o arquivo **sonar.sh** para iniciar o SonarQube.
 
@@ -86,7 +86,7 @@ Após iniciar o SonarQube acesse o seguinte endereço para acessar o SonarQube: 
 
 Com o SonarQube aberto veremos algo semelhante a isso:
 
-<img src="./imagens/exemplo-3.png"/>
+<img src="imagens/exemplo-2.png"/>
 
 
 
@@ -102,9 +102,8 @@ Essa senha pode ser alterada posteriormente.
 
 Após efetuar o login no SonarQube veremos a seguinte tela:
 
-<img src="./imagens/exemplo-4.png">
+<img src="imagens/exemplo-3.png">
 
 
 
 Como ainda não criamos nenhum projeto no SonarQube não teremos nenhuma informação de projetos no painel.
-
