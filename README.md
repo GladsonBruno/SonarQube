@@ -107,3 +107,63 @@ Após efetuar o login no SonarQube veremos a seguinte tela:
 
 
 Como ainda não criamos nenhum projeto no SonarQube não teremos nenhuma informação de projetos no painel.
+
+
+
+# Configurando um projeto Maven no SonarQube
+
+Agora iremos configurar nosso primeiro projeto no SonarQube, para isso utilizaremos um projeto de exemplo que pode ser baixado no seguinte **link[ALGUM LINK AQUI]**.
+
+O projeto de exemplo é uma API de produtos feita com Java e SpringBoot utilizando o gerenciador de dependências Maven.
+
+Após extrair o projeto para sua máquina abra um prompt de comando na pasta do projeto.
+
+Volte ao SonarQube e no canto superior direito clique no botão **+** e escolha a opção **Create new project** conforme o exemplo abaixo:
+
+<img src="imagens/exemplo-4.png" style="float: left"/>
+
+Após isso será solicitado que você crie um **Project Key** e defina um **Display Name** conforme o exemplo abaixo:
+
+<img src="imagens/exemplo-5.png" style="float: left"/>
+
+O **Project Key** é um identificador exclusivo para o seu projeto.
+
+A recomendação do SonarQube para projetos Maven é definir a chave no seguinte formato: **groupId: artifactId**.
+
+**Display Name** é utilizado para definir o nome do projeto no SonarQube.
+
+Para fins didáticos definimos **Project Key** como **com.tdc:api-produtos** e **Display Name** como **API de Produtos**.
+
+Após isso você será redirecionado para a seguinte tela:
+
+<img src="imagens/exemplo-6.png" style="float: left"/>
+
+Conforme podemos observar foi requisitado pelo SonarQube um token, este token é usado para identificá-lo quando uma análise é realizada. 
+
+Para fins didáticos definiremos este token com o valor **api-produtos**, após isso clique no botão **Generate**.
+
+Podemos observar no exemplo abaixo que o SonarQube gerou um Token a partir do valor que passamos a ele na etapa anterior:
+
+<img src="imagens/exemplo-7.png" style="float: left"/>
+
+Clique no botão **Continue** para continuarmos.
+
+Em seguida será solicitado que você informe qual a linguagem principal do projeto em questão:
+
+<img src="imagens/exemplo-8.png" style="float: left"/>
+
+No nosso caso é um projeto **Java**, com isso selecione a opção **Java**.
+
+Depois de selecionar a linguagem principal do projeto o SonarQube irá pergunta qual tecnologia está sendo utilizada para realizar o build do projeto, podemos ver no exemplo abaixo as opções **Maven** e **Gradle**.
+
+<img src="imagens/exemplo-9.png" style="float: left"/>
+
+Nosso projeto é um projeto **Maven**, com isso escolha a opção **Maven**.
+
+Em seguida o SonarQube irá nos fornecer um comando **Maven** para executarmos a análise de nosso projeto:
+
+<img src="imagens/exemplo-10.png" style="float: left"/>
+
+Copie esse código, abra o prompt de comando e navegue até o diretório de nosso projeto de exemplo.
+
+Em seguida cole o comando copiado e pressione **Enter** para executar o mesmo.
