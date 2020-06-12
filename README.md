@@ -464,7 +464,7 @@ Podemos observar que neste sub menu possuímos outros sub menus referentes a:
 
 
 
-# Visão geral menu Administração
+# Visão geral menu Administration(Administração)
 
 Neste tópico veremos uma visão geral do que o menu Administração tem a oferecer.
 
