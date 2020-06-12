@@ -37,6 +37,7 @@ Existem alguns pontos técnicos que devem ser analisados quando se faz a anális
 - Componentes complexos ou/e má distribuição dos componentes entre complexidade
 - Baixa cobertura de código, testes unitários, especialmente na parte complexa do programa
 - Possíveis *bugs*
+- Code Smells (Maus cheiros de código)
 
 O SonarQube é capaz de identificar esses dentre outros problemas que podem afetar a qualidade do código fonte de uma aplicação.
 
@@ -466,4 +467,3 @@ O SonarQube permite a instalação de plugins, para isso acesse o menu **Adminis
 Exemplo:
 
 <img src="imagens/exemplo-19.png"/>
-
