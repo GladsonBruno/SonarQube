@@ -435,10 +435,35 @@ Exemplo:
 
 Podemos observar que neste sub menu possuímos outros sub menus referentes a:
 
-* General Settings (Configurações gerais)
-* Quality Profiles
-* Quality Gate
-* Custom Measures (Medições personalizadas)
-* Links
-* Permissions (Permissões)
-* TESTE
+* General Settings: Configurações gerais do projeto.
+
+* Quality Profiles: Permite escolher qual perfil estará associado ao projeto, idioma por idioma.
+
+* Quality Gate: Permite escolher qual Quality Gate estará associado ao projeto.
+
+* Custom Measures (Medições personalizadas): Atualize os valores das métricas personalizadas para este projeto. As alterações entrarão em vigor na próxima análise do projeto. Métricas personalizadas devem ser criadas em nível global.
+
+  Uma observação importante é que este menu está marcado para remoção em versões futuras do SonarQube.
+
+* Links: Permite editar alguns links associados ao projeto.
+
+* Permissions (Permissões): Permite conceder e revogar permissões no nível do projeto. As permissões podem ser concedidas a grupos ou usuários individuais.
+
+* Background Tasks (Tarefas de segundo plano): Esta página permite o monitoramento da fila de tarefas em execução de forma assíncrona no servidor do SonarQube. Também fornece acesso ao histórico de tarefas concluídas e seu status. O processamento do relatório de análise é o tipo mais comum de tarefa em segundo plano.
+
+* Update Key: Permite alterar a chave de identificação que definimos para o projeto.
+
+* Webhooks: Os webhooks são usados para notificar serviços externos quando uma análise de projeto é feita. Uma solicitação HTTP POST incluindo uma carga JSON é enviada para cada um dos URLs fornecidos.
+
+* Deletion (Deleção): Permite realizar a deleção do projeto no SonarQube.
+
+
+
+# Instalando Plugins
+
+O SonarQube permite a instalação de plugins, para isso acesse o menu **Administration** e clique no sub menu **Marketplace**.
+
+Exemplo:
+
+<img src="imagens/exemplo-19.png"/>
+
