@@ -466,7 +466,7 @@ Podemos observar que neste sub menu possuímos outros sub menus referentes a:
 
 # Visão geral menu Administração
 
-Neste tópico veremos uma visão geral do que o menu Adminstração tem a oferecer.
+Neste tópico veremos uma visão geral do que o menu Administração tem a oferecer.
 
 Ao acessarmos o menu adminstração veremos algo semelhante a isso:
 
@@ -474,7 +474,17 @@ Ao acessarmos o menu adminstração veremos algo semelhante a isso:
 
 
 
-Observe que no menu administração existem outros 5 submenus.
+Observe que ao acessar o menu administração somos apresentados a outros 5 menus, sendo eles:
+
+* Configuration
+* Security
+* Projects
+* System
+* Marketplace
+
+
+
+Abordaremos cada um deles nos próximos tópicos.
 
 
 
@@ -515,7 +525,7 @@ O menu **Projects** referente ao menu **Administration** possui alguns submenus 
 
 Fornece uma série de informações sobre o servidor SonarQube, alem de possibilitar o download de logs e informações do servidor.
 
-Neste menu também é possível reiniciar o servidor SonarQube.
+Neste menu também é possível reiniciar o servidor do SonarQube.
 
 Exemplo:
 
