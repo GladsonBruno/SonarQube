@@ -69,9 +69,9 @@ A instalação do SonarQube é bem simples.
 
 O único requisito para utilização do SonarQube é possuir a versão correta do Java instalada em sua máquina.
 
-Recomendamos o download da versão 7.8 pois ela é a versão mais recente com suporte para o Java 8, as demais versões existem o Java 11.
+Recomendamos o download da versão 7.8 pois ela é a versão mais recente com suporte para o Java 8, as demais versões exigem o Java 11.
 
-Primeiro precisaremos acessar o seguinte este [link]( https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.8.zip) para realizar o download desta versão do SonarQube.  
+Primeiro precisaremos acessar o seguinte este [link]( https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.8.zip) para realizar o download desta versão específica do SonarQube.  
 
 Após realizar o download extraia o diretório **sonarqube-7.8** do arquivo **.zip** baixado.
 
@@ -83,7 +83,7 @@ Nas versões **Linux** ou **MacOs** execute o arquivo **sonar.sh** para iniciar 
 
 Na versão **Windows** execute o arquivo **StartSonar.bat**, na versão windows também é possível instalar o SonarQube como serviço executando o arquivo **InstallNTService.bat**.
 
-Após iniciar o SonarQube acesse o seguinte endereço para acessar o SonarQube: **http://localhost:9000**.
+Após iniciar o SonarQube acesse o seguinte endereço para acessar a interface Web do SonarQube: **http://localhost:9000**.
 
 Com o SonarQube aberto veremos algo semelhante a isso:
 
@@ -99,7 +99,7 @@ Por padrão o login e senha do SonarQube são:
 
 **Senha: admin**
 
-Essa senha pode ser alterada posteriormente.
+Essa senha pode ser alterada posteriormente. Também poderemos criar usuários com permissões específicas para acessar o SonarQube.
 
 Após efetuar o login no SonarQube veremos a seguinte tela:
 
@@ -167,7 +167,7 @@ A propriedade **sonar.projectVersion** define a versão do projeto.
 
 A propriedade **sonar.sources** define  caminhos separados por vírgula para diretórios que contêm arquivos do projeto.  Quando não fornecido o valor padrão é o diretório base do projeto.
 
-A propriedade **sonar.sourceEncoding** define a codificação do sistema **como UTF-8**.
+A propriedade **sonar.sourceEncoding** define a codificação do sistema como  **UTF-8**.
 
 Para saber mais sobre as propriedades de configuração disponíveis acesse este [link]( https://docs.sonarqube.org/7.8/analysis/analysis-parameters/ ).
 
@@ -245,7 +245,7 @@ As *Issues* estão divididas nas seguintes categorias:
 
 - **Code Smells:** São problemas relacionados a manutenibilidade do código. Deixar isso como está significa que, na melhor das hipóteses, os desenvolvedores terão mais dificuldade do que deveriam para fazer alterações no código. Na pior das hipóteses, eles ficarão tão confusos com o estado do código que introduzirão mais erros à medida que fizerem alterações.
 
-- **Bugs:** itens que representam erros no código que, se ainda não aconteceram em produção, provavelmente acontecerão, e no pior momento possível. Isso precisa ser corrigido.
+- **Bugs:** itens que representam erros no código que, se ainda não aconteceram em produção, provavelmente acontecerão, e no pior momento possível. Problemas desta categoria precisam ser corrigidos.
 
 - **Vulnerabilities (Vulnerabilidades):** são fraquezas ou brechas de segurança na aplicação.
 
@@ -327,13 +327,17 @@ Para verificar as métricas resumidas de nossos projetos podemos acessar o menu 
 
 Podemos observar que o projeto de exemplo possui 0 bugs, 2 vulnerabilidades, 5 Code Smells, 0% de cobertura de código e 0.0% de duplicatas.
 
-Podemos ver também o status do projeto(Passed) e a nota de qualidade atribuída as categorias de Bugs, Vulnerabilidades e Code Smells, além disso podemos ver ao lado direito do nome do projeto o status do projeto referente ao Quality Gate pré definido pelo SonarQube.
+Podemos ver a nota de qualidade atribuída as categorias de Bugs, Vulnerabilidades e Code Smells, além disso podemos ver ao lado direito do nome do projeto o status do projeto referente ao Quality Gate pré definido pelo SonarQube.
 
 Para ter uma visão mais detalhada clique no projeto **API de Produtos**.
 
 Ao fazermos isso seremos redirecionados a página detalhada de métricas de nosso projeto conforme o exemplo abaixo:
 
 <img src="imagens/exemplo-11.png"/>
+
+
+
+nos próximos tópicos abordaremos cada um dos Sub menus do detalhamento de um projeto.
 
 
 
@@ -378,7 +382,7 @@ Além da visão geral das medições do projeto também possuímos medições de
 * **Complexity (Complexidade)**: Quão simples ou complicado é o fluxo de controle do aplicativo. 
   Esta categoria fornece a medição de **Complexidade Ciclomática** e **Complexidade Cognitiva**.
   A **complexidade ciclomática** mede o número mínimo de casos de teste necessários para a cobertura total do teste. 
-  A **complexidade cognitiva** é uma medida de quão difícil é o aplicativo entender.
+  A **complexidade cognitiva** é uma medida de quão difícil é de se entender o aplicativo.
 
   Exemplo:
 
@@ -436,27 +440,27 @@ Exemplo:
 
 Podemos observar que neste sub menu possuímos outros sub menus referentes a:
 
-* General Settings: Configurações gerais do projeto.
+* **General Settings**: Configurações gerais do projeto.
 
-* Quality Profiles: Permite escolher qual perfil estará associado ao projeto, idioma por idioma.
+* **Quality Profiles**: Permite escolher qual perfil estará associado ao projeto, idioma por idioma.
 
-* Quality Gate: Permite escolher qual Quality Gate estará associado ao projeto.
+* **Quality Gate**: Permite escolher qual Quality Gate estará associado ao projeto.
 
-* Custom Measures (Medições personalizadas): Atualize os valores das métricas personalizadas para este projeto. As alterações entrarão em vigor na próxima análise do projeto. Métricas personalizadas devem ser criadas em nível global.
+* **Custom Measures (Medições personalizadas)**: Atualize os valores das métricas personalizadas para este projeto. As alterações entrarão em vigor na próxima análise do projeto. Métricas personalizadas devem ser criadas em nível global.
 
   Uma observação importante é que este menu está marcado para remoção em versões futuras do SonarQube.
 
-* Links: Permite editar alguns links associados ao projeto.
+* **Links**: Permite editar alguns links associados ao projeto.
 
-* Permissions (Permissões): Permite conceder e revogar permissões no nível do projeto. As permissões podem ser concedidas a grupos ou usuários individuais.
+* **Permissions (Permissões)**: Permite conceder e revogar permissões no nível do projeto. As permissões podem ser concedidas a grupos ou usuários individuais.
 
-* Background Tasks (Tarefas de segundo plano): Esta página permite o monitoramento da fila de tarefas em execução de forma assíncrona no servidor do SonarQube. Também fornece acesso ao histórico de tarefas concluídas e seu status. O processamento do relatório de análise é o tipo mais comum de tarefa em segundo plano.
+* **Background Tasks (Tarefas de segundo plano)**: Esta página permite o monitoramento da fila de tarefas em execução de forma assíncrona no servidor do SonarQube. Também fornece acesso ao histórico de tarefas concluídas e seu status. O processamento do relatório de análise é o tipo mais comum de tarefa em segundo plano.
 
-* Update Key: Permite alterar a chave de identificação que definimos para o projeto.
+* **Update Key**: Permite alterar a chave de identificação que definimos para o projeto.
 
-* Webhooks: Os webhooks são usados para notificar serviços externos quando uma análise de projeto é feita. Uma solicitação HTTP POST incluindo uma carga JSON é enviada para cada um dos URLs fornecidos.
+* **Webhooks**: Os webhooks são usados para notificar serviços externos quando uma análise de projeto é feita. Uma solicitação HTTP POST incluindo uma carga JSON é enviada para cada um dos URLs fornecidos.
 
-* Deletion (Deleção): Permite realizar a deleção do projeto no SonarQube.
+* **Deletion (Deleção)**: Permite realizar a deleção do projeto no SonarQube.
 
 
 
