@@ -446,7 +446,7 @@ Podemos observar que neste sub menu possuímos outros sub menus referentes a:
 
 * **Quality Gate**: Permite escolher qual Quality Gate estará associado ao projeto.
 
-* **Custom Measures (Medições personalizadas)**: Atualize os valores das métricas personalizadas para este projeto. As alterações entrarão em vigor na próxima análise do projeto. Métricas personalizadas devem ser criadas em nível global.
+* **Custom Measures (Medições personalizadas)**: Permite atualizar os valores das métricas personalizadas para este projeto. As alterações entrarão em vigor na próxima análise do projeto. Métricas personalizadas devem ser criadas em nível global.
 
   Uma observação importante é que este menu está marcado para remoção em versões futuras do SonarQube.
 
@@ -464,10 +464,71 @@ Podemos observar que neste sub menu possuímos outros sub menus referentes a:
 
 
 
-# Instalando Plugins
+# Visão geral menu Administração
 
-O SonarQube permite a instalação de plugins, para isso acesse o menu **Administration** e clique no sub menu **Marketplace**.
+Neste tópico veremos uma visão geral do que o menu Adminstração tem a oferecer.
+
+Ao acessarmos o menu adminstração veremos algo semelhante a isso:
+
+<img src="imagens/exemplo-19.png"/>
+
+
+
+Observe que no menu administração existem outros 5 submenus.
+
+
+
+## Menu Configuration e seus sub menus
+
+O menu **Configuration** possui alguns submenus que fornecem as seguinte funcionalidades:
+
+* **General Settings**: Configurações global da instância SonarQube
+
+* **Encryption**: Fornece a possibilidade de gerar chaves secretas no SonarQube.
+
+* **Custom Metrics**: Fornece a possibilidade de criar métrica personalizadas para todos os projetos do SonarQube
+
+  
+
+## Menu Security e seus sub menus
+
+O menu **Security** possui alguns submenus que fornecem as seguinte funcionalidades:
+
+* **Users**: Permite criar e administrar usuários individuais no SonarQube.
+* **Groups**: Permite criar e administrar grupos de usuários no SonarQube.
+* **Global Permissions**: Permite conceder e revogar permissões para fazer alterações a nível global. Essas permissões incluem editar perfis de qualidade, executar análises e executar a administração global do sistema.
+* **Permission Templates**: Permite gerenciar templates de permissões para projetos.
+
+
+
+## Menu Projects e seus sub menus
+
+O menu **Projects** referente ao menu **Administration** possui alguns submenus que fornecem as seguinte funcionalidades:
+
+* **Management**: Permite gerenciar todos os projetos cadastrados no SonarQube.
+
+* **Background Tasks (Tarefas de segundo plano)**: Permite o monitoramento global da fila de tarefas em execução de forma assíncrona do servidor do SonarQube. Também fornece acesso ao histórico de tarefas concluídas e seu status. O processamento do relatório de análise é o tipo mais comum de tarefa em segundo plano.
+
+  
+
+## Menu System
+
+Fornece uma série de informações sobre o servidor SonarQube, alem de possibilitar o download de logs e informações do servidor.
+
+Neste menu também é possível reiniciar o servidor SonarQube.
 
 Exemplo:
 
-<img src="imagens/exemplo-19.png"/>
+<img src="imagens/exemplo-20.png"/>
+
+
+
+## Menu Marketplace
+
+Este menu fornece a possibilidade de realizar o download de plugins para o SonarQube.
+
+Basta pesquisar e instalar o plugin.
+
+Exemplo:
+
+<img src="imagens/exemplo-21.png"/>
