@@ -108,6 +108,8 @@ Após efetuar o login no SonarQube veremos a seguinte tela:
 
 Como ainda não criamos nenhum projeto no SonarQube não teremos nenhuma informação de projetos no painel.
 
+Observe que possuímos alguns menus no SonarQube, abordaremos cada um deles posteriormente.
+
 
 
 # Configurando o SonarScanner do Maven
@@ -183,4 +185,76 @@ Para visualizar os projetos criados acesse o seguinte link:  http://localhost:90
 Abaixo um exemplo de como ficaria o projeto criado no SonarQube.
 
 <img src="imagens/exemplo-4.png"/>
+
+
+
+
+
+# Métricas
+
+O SonarQube oferece uma série de métricas sobre a qualidade do código, entre elas estão:
+
+- Complexidade (ciclomática e cognitiva)
+
+- Código duplicado
+
+- Quantidade de Problemas
+
+- Tamanho (quantidade de linhas de código, número de classes, etc…)
+
+- Cobertura de testes
+
+- Índice de Manutenibilidade, Confiabilidade e Segurança
+
+  
+
+# Alguns conceitos do SonarQube 
+
+Ao abrirmos o SonarQube pela primeira vez nos deparamos com uma séries de termos desconhecidos até o momento, neste tópico abordaremos cada um deles.
+
+
+
+## Rules (Regras)
+
+O SonarQube se baseia em regras pré-definidas para analisar o código. Uma regra ou Rule é uma boa prática e cada linguagem possui um grupo de regras relacionadas. Toda a regra possui uma descrição, normalmente, com exemplo de código e links para descrições mais detalhadas, o que ajuda o desenvolvedor a entender e resolver o problema relacionado, como mostra o exemplo abaixo:
+
+<img src="imagens/exemplo-5.png"/>
+
+Todas as regras pré-definidas no SonarQube podem ser acessadas através do menu **Rules**.
+
+
+
+## Issues (Problemas)
+
+Toda vez que um código quebra uma regra, uma *Issue* é gerada.
+
+No menu Issues podemos verificar todas as Issues geradas de todos os projetos registrados no SonarQube.
+
+Abaixo um exemplo da tela de Issues.
+
+<img src="imagens/exemplo-5-1.png"/>
+
+
+
+As *Issues* estão divididas nas seguintes categorias: 
+
+<img src="imagens/exemplo-6.png"/>
+
+
+
+- **Code Smells:** São problemas relacionados a manutenibilidade do código. Deixar isso como está significa que, na melhor das hipóteses, os desenvolvedores terão mais dificuldade do que deveriam para fazer alterações no código. Na pior das hipóteses, eles ficarão tão confusos com o estado do código que introduzirão mais erros à medida que fizerem alterações.
+
+- **Bugs:** itens que representam erros no código que, se ainda não aconteceram em produção, provavelmente acontecerão, e no pior momento possível. Isso precisa ser corrigido.
+
+- **Vulnerabilities (Vulnerabilidades):** são fraquezas ou brechas de segurança na aplicação.
+
+- Além dessas 3 categorias principais podemos ter também uma outra categoria chamada de **Security Hotspot** que se trata de uma vulnerabilidade referente a um código sensível à segurança da aplicação no qual o desenvolvedor precisa revisar. Após a revisão será definido se o ponto em específico é realmente uma vulnerabilidade de segurança a ser tratada.
+
+  Para compreender detalhadamente sobre **Security Hotspots** acesse este [link]( https://docs.sonarqube.org/latest/user-guide/security-hotspots/ ).
+
+  
+
+As *Issues* também são classificadas por severidade, conforme a tabela abaixo: 
+
+<img src="imagens/exemplo-7.png"/>
 
