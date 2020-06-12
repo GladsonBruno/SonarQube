@@ -145,7 +145,7 @@ A configuração final será semelhante a isso:
 
 # Configurando um projeto Maven no SonarQube
 
-Agora iremos configurar nosso primeiro projeto no SonarQube, para isso utilizaremos um projeto de exemplo que pode ser baixado no seguinte **link[ALGUM LINK AQUI]**.
+Agora iremos configurar nosso primeiro projeto no SonarQube, para isso utilizaremos um projeto de exemplo que pode ser baixado no seguinte [link](/projeto-exemplo/api-produtos.zip).
 
 O projeto de exemplo é uma API de produtos feita com Java e SpringBoot utilizando o gerenciador de dependências Maven.
 
@@ -180,5 +180,7 @@ Após alguns minutos nosso projeto será compilado e criado no Sonar Qube.
 
 Para visualizar os projetos criados acesse o seguinte link:  http://localhost:9000/projects
 
+Abaixo um exemplo de como ficaria o projeto criado no SonarQube.
 
+<img src="imagens/exemplo-4.png"/>
 
