@@ -14,6 +14,51 @@ Atualmente a versão gratuita do SonarQube (Community Edition) fornece suporte p
 
 
 
+# Como a boa qualidade do código é definida?
+
+A boa qualidade do código é definida como um código limpo que faz o que foi projetado para fazer. 
+
+O código deve seguir um estilo consistente e ser fácil de entender. Ele precisa ser bem documentado e igualmente bem testado.
+
+
+
+# Visão geral sobre código limpo.
+
+Clean Code ou código limpo é uma filosofia de desenvolvimento cuja o principal objetivo é aplicar técnicas simples que visam facilitar a escrita e leitura de um código.
+Algumas dessas técnicas são:
+
+* Se você tem mais de um bloco de código em mais de dois lugares considere torná-lo um método separado.
+
+* Evite utilizar os chamados "números mágicos" que são aqueles números aleatórios que de vez em quando você acaba encontrando no código, eles são "mágicos" porquê se assemelham com o truque de um mágico, sendo necessário uma explicação para que sejam entendidos.
+
+* Sempre que for alterar/corrigir/adicionar código à sua aplicação, melhore um outro trecho, seja refatorando ou até mesmo reescrevendo.
+
+* Procure sempre encontrar a causa raiz do problema que está resolvendo, respeite a regra do 80/20, também conhecida como [Lei de Pareto](https://pt.wikipedia.org/wiki/Princípio_de_Pareto)(80% das consequências advêm de 20% das causas, com isso encontrando as causas resolvemos a maioria dos problemas).
+
+* Seja consistente. Se você faz uma coisa de um jeito, faça todas as coisas desse jeito! 
+
+* Dê nome significativos às suas variáveis.
+
+* Prefira utilizar objetos no lugar de variáveis primitivas.
+
+* Não utilize condicionais negativos.
+
+* Declare variáveis perto de onde são utilizadas 
+
+* Funções dependentes devem estar perto.
+
+* Funções similares também.
+
+* Mantenha as linhas curtas.
+
+* Faça bom uso de espaçamentos
+
+* Não quebre a identação.
+
+  
+
+Essas são algumas das diversas práticas aconselhadas pelo código limpo, para aprofundar melhor no assunto você pode ler o livro [Código Limpo: Habilidades Práticas do Agile Software](https://amzn.to/2Ob9Yw0).
+
 
 
 # Por que gerenciar a qualidade do código fonte?
