@@ -4,6 +4,13 @@ Neste workshop abordaremos a ferramenta SonarQube e como ela pode ser útil para
 
 
 
+# Pré requisitos
+
+* Possuir o Java 8 instalado.
+* Possuir o Maven na versão 3 ou superior instalado.
+
+
+
 # O que é SonarQube?
 
 O SonarQube é uma plataforma de código aberto desenvolvida pela SonarSource, ele é usado por equipes de desenvolvimento para o gerenciamento da qualidade de código fonte.
@@ -640,4 +647,3 @@ Basta pesquisar e instalar o plugin.
 Exemplo:
 
 <img src="imagens/exemplo-21.png"/>
-
