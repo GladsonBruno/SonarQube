@@ -61,7 +61,9 @@ Algumas dessas técnicas são:
 
   
 
-Essas são algumas das diversas práticas aconselhadas pelo código limpo, para aprofundar melhor no assunto você pode ler o livro [Código Limpo: Habilidades Práticas do Agile Software](https://amzn.to/2Ob9Yw0).
+Essas são algumas das diversas práticas aconselhadas pelo código limpo para melhoria da qualidade do código fonte.
+
+Para se aprofundar melhor no assunto você pode ler o livro [Código Limpo: Habilidades Práticas do Agile Software](https://amzn.to/2Ob9Yw0).
 
 
 
