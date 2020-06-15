@@ -14,11 +14,15 @@ Atualmente a versão gratuita do SonarQube (Community Edition) fornece suporte p
 
 
 
+
+
 # Como a boa qualidade do código é definida?
 
 A boa qualidade do código é definida como um código limpo que faz o que foi projetado para fazer. 
 
 O código deve seguir um estilo consistente e ser fácil de entender. Ele precisa ser bem documentado e igualmente bem testado.
+
+
 
 
 
@@ -61,6 +65,8 @@ Essas são algumas das diversas práticas aconselhadas pelo código limpo, para 
 
 
 
+
+
 # Por que gerenciar a qualidade do código fonte?
 
 Para responder essa pergunta leve em consideração a seguinte citação:
@@ -70,6 +76,8 @@ Para responder essa pergunta leve em consideração a seguinte citação:
 Como uma introdução rápida, esta é a melhor definição de qualidade de código fonte. Fica ainda mais forte quando colocado o contrário: *um programa mal escrito é um programa onde o custo de implementação de uma característica cresce ao longo do tempo.*
 
 Com isso podemos compreender a importância da qualidade de código fonte.
+
+
 
 
 
@@ -92,6 +100,8 @@ Em seguida, com base na situação atual do projeto, estabelecer um plano para a
 
 
 
+
+
 # Como o SonarQube funciona?
 
 O SonarQube possui uma arquitetura bastante simples e flexível que é constituída por três componentes:
@@ -105,6 +115,8 @@ O SonarQube possui uma arquitetura bastante simples e flexível que é constitu�
   
 
 Com esses componentes o SonarQube embarca as melhores ferramentas para analisar violações de regras de qualidade, bugs em potencial, cobertura de testes de unidade, violações de segurança, entre outros.
+
+
 
 
 
@@ -136,6 +148,8 @@ Com o SonarQube aberto veremos algo semelhante a isso:
 
 
 
+
+
 # Efetuando login no SonarQube
 
 Por padrão o login e senha do SonarQube são:
@@ -155,6 +169,8 @@ Após efetuar o login no SonarQube veremos a seguinte tela:
 Como ainda não criamos nenhum projeto no SonarQube não teremos nenhuma informação de projetos no painel.
 
 Observe que possuímos alguns menus no SonarQube, abordaremos cada um deles posteriormente.
+
+
 
 
 
@@ -252,7 +268,10 @@ O SonarQube oferece uma série de métricas sobre a qualidade do código, entre 
 
 - Índice de Manutenibilidade, Confiabilidade e Segurança
 
-  
+
+
+
+
 
 # Alguns conceitos do SonarQube 
 
@@ -267,6 +286,8 @@ O SonarQube se baseia em regras pré-definidas para analisar o código. Uma regr
 <img src="imagens/exemplo-5.png"/>
 
 Todas as regras pré-definidas no SonarQube podem ser acessadas através do menu **Rules**.
+
+
 
 
 
@@ -320,6 +341,8 @@ As *Issues* também são classificadas por severidade, conforme a tabela abaixo:
 
 
 
+
+
 ## Quality Profile (Perfil de Qualidade)
 
 As *Issues* são geradas a partir das regras pré-definidas, que, por sua vez, estão relacionadas a um **Quality Profile (Perfil de Qualidade)**. Cada linguagem possui um perfil de qualidade associado. Além disso, o SonarQube permite extensão de perfis através de herança.
@@ -331,6 +354,8 @@ Para acessar os perfis de qualidade pré-definidos pelo SonarQube você pode ace
 Um exemplo desta tela seria:
 
 <img src="imagens/exemplo-9.png"/>
+
+
 
 
 
@@ -362,6 +387,8 @@ Um exemplo desta tela seria:
 
 # Acessando as informações e métricas de nossos projetos
 
+
+
 ## Menu Projects
 
 Para verificar as métricas resumidas de nossos projetos podemos acessar o menu **Projects** onde veremos algo como o exemplo abaixo:
@@ -386,15 +413,21 @@ nos próximos tópicos abordaremos cada um dos Sub menus do detalhamento de um p
 
 
 
+
+
 ## Sub menu Overview
 
 Apresenta uma visão geral de nosso projeto.
 
 
 
+
+
 ## Sub menu Issues
 
 Apresenta as informações de Issues do projeto selecionado.
+
+
 
 
 
@@ -443,6 +476,8 @@ Além da visão geral das medições do projeto também possuímos medições de
 
 
 
+
+
 ## Sub menu Code
 
 Fornece a visão do código do aplicativo e uma medição de:
@@ -463,6 +498,8 @@ Exemplo:
 
 
 
+
+
 ## Sub menu Activity
 
 Fornece uma visão geral do histórico de atividade do projeto a cada vez que o mesmo é analisado pelo SonarQube.
@@ -472,6 +509,8 @@ Nele podemos ver um histórico do projeto referente a melhorias ou pioras de aco
 Exemplo:
 
 <img src="imagens/exemplo-17.png"/>
+
+
 
 
 
@@ -509,6 +548,8 @@ Podemos observar que neste sub menu possuímos outros sub menus referentes a:
 
 
 
+
+
 # Visão geral menu Administration(Administração)
 
 Neste tópico veremos uma visão geral do que o menu Administração tem a oferecer.
@@ -533,6 +574,8 @@ Abordaremos cada um deles nos próximos tópicos.
 
 
 
+
+
 ## Menu Configuration e seus sub menus
 
 O menu **Configuration** possui alguns submenus que fornecem as seguinte funcionalidades:
@@ -543,7 +586,9 @@ O menu **Configuration** possui alguns submenus que fornecem as seguinte funcion
 
 * **Custom Metrics**: Fornece a possibilidade de criar métrica personalizadas para todos os projetos do SonarQube
 
-  
+
+
+
 
 ## Menu Security e seus sub menus
 
@@ -556,6 +601,8 @@ O menu **Security** possui alguns submenus que fornecem as seguinte funcionalida
 
 
 
+
+
 ## Menu Projects e seus sub menus
 
 O menu **Projects** referente ao menu **Administration** possui alguns submenus que fornecem as seguinte funcionalidades:
@@ -564,7 +611,9 @@ O menu **Projects** referente ao menu **Administration** possui alguns submenus 
 
 * **Background Tasks (Tarefas de segundo plano)**: Permite o monitoramento global da fila de tarefas em execução de forma assíncrona do servidor do SonarQube. Também fornece acesso ao histórico de tarefas concluídas e seu status. O processamento do relatório de análise é o tipo mais comum de tarefa em segundo plano.
 
-  
+
+
+
 
 ## Menu System
 
@@ -578,6 +627,8 @@ Exemplo:
 
 
 
+
+
 ## Menu Marketplace
 
 Este menu fornece a possibilidade de realizar o download de plugins para o SonarQube.
@@ -587,3 +638,4 @@ Basta pesquisar e instalar o plugin.
 Exemplo:
 
 <img src="imagens/exemplo-21.png"/>
+
