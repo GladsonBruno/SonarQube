@@ -406,7 +406,7 @@ Para verificar as métricas resumidas de nossos projetos podemos acessar o menu 
 
 
 
-Podemos observar que o projeto de exemplo possui 0 bugs, 2 vulnerabilidades, 5 Code Smells, 0% de cobertura de código e 0.0% de duplicatas.
+Podemos observar que o projeto de exemplo possui 1 bug, 3 vulnerabilidades, 5 Code Smells, 0% de cobertura de código e 0.0% de duplicatas.
 
 Podemos ver a nota de qualidade atribuída as categorias de Bugs, Vulnerabilidades e Code Smells, além disso podemos ver ao lado direito do nome do projeto o status do projeto referente ao Quality Gate pré definido pelo SonarQube.
 
@@ -557,6 +557,32 @@ Podemos observar que neste sub menu possuímos outros sub menus referentes a:
 
 
 
+# Exercício 1
+
+Com base no projeto de exemplo resolva o bug apontado pelo SonarQube.
+
+Após finalizar faça a análise do código novamente utilizando o Maven e observe os resultados no SonarQube.
+
+
+
+# Exercício 2
+
+Com base no projeto de exemplo resolva uma das vulnerabilidades apontas pelo SonarQube.
+
+Após finalizar faça a análise do código novamente utilizando o Maven e observe os resultados no SonarQube.
+
+
+
+# Exercício 3
+
+Com base no projeto de exemplo resolva 2 dos CodeSmells apontos pelo SonarQube.
+
+Após finalizar faça a análise do código novamente utilizando o Maven e observe os resultados no SonarQube.
+
+
+
+
+
 
 
 # Visão geral menu Administration(Administração)
@@ -647,3 +673,4 @@ Basta pesquisar e instalar o plugin.
 Exemplo:
 
 <img src="imagens/exemplo-21.png"/>
+
