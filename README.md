@@ -392,6 +392,45 @@ Um exemplo desta tela seria:
 
 
 
+## Exercicio 1
+
+Crie um Quality Gate chamado QualityGateExemplo com as seguintes condições de erro:
+Bugs > 0
+Issues > 5
+Condition Coverage < 80%
+Code Smells > 5000
+Vulnerabilities > 5
+
+Após finalizar a criação aplique este QualityGate ao projeto de exemplo e execute a análise de código novamente e observe os resultados no SonarQube.
+
+## Exercício 2
+Atualize o Quality Gate criado no exercício anterior adicionando as seguintes condições de erro
+
+Coverage on New Code(Cobertura de código novo) < 80.0%
+Duplicated Lines on New Code(Linhas duplicadas no código novo) > 3.0%
+Maintainability Rating on New Code(Classificação da manutenção do novo código) é pior do que A
+Reliability Rating on New Code(Classificação de confiabilidade do novo código) é pior do que A
+Security Rating on New Code(Classificação de segurança do novo código) é pior do que A
+New Code Smells > 5
+New Issues > 5 
+New Bugs > 0
+New Vulnerabilities > 0
+
+Após finalizar a criação aplique este QualityGate ao projeto de exemplo e execute a análise de código novamente e observe os resultados no SonarQube.
+
+## Exercício 3
+Crie um Quality Gate a partir de uma cópia do Quality Gate padrão SonarWay e atribua as seguintes condições de erro a ele:
+
+New Code Smells > 5
+New Issues > 5 
+New Bugs > 0
+New Vulnerabilities > 0
+
+Após finalizar a criação aplique este QualityGate ao projeto de exemplo e execute a análise de código novamente e observe os resultados no SonarQube.
+
+## Exercício 4
+Para finalizarmos com os Quality Gates delete os 2 Quality Gates que criamos nos exercícios anteriores e execute a análise de código novamente e observe os resultados no SonarQube.
+
 
 
 # Acessando as informações e métricas de nossos projetos
@@ -557,7 +596,9 @@ Podemos observar que neste sub menu possuímos outros sub menus referentes a:
 
 
 
-# Exercício 1
+
+
+## Exercício 5
 
 Com base no projeto de exemplo resolva o bug apontado pelo SonarQube.
 
@@ -565,7 +606,9 @@ Após finalizar faça a análise do código novamente utilizando o Maven e obser
 
 
 
-# Exercício 2
+
+
+## Exercício 6
 
 Com base no projeto de exemplo resolva uma das vulnerabilidades apontas pelo SonarQube.
 
@@ -573,7 +616,9 @@ Após finalizar faça a análise do código novamente utilizando o Maven e obser
 
 
 
-# Exercício 3
+
+
+## Exercício 7
 
 Com base no projeto de exemplo resolva 2 dos CodeSmells apontos pelo SonarQube.
 
