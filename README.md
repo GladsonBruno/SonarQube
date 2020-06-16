@@ -611,7 +611,7 @@ Após finalizar faça a análise do código novamente utilizando o Maven e obser
 
 ## Exercício 6
 
-Com base no projeto de exemplo resolva uma das vulnerabilidades apontas pelo SonarQube.
+Com base no projeto de exemplo resolva uma das vulnerabilidades apontadas pelo SonarQube.
 
 Após finalizar faça a análise do código novamente utilizando o Maven e observe os resultados no SonarQube.
 
@@ -621,7 +621,7 @@ Após finalizar faça a análise do código novamente utilizando o Maven e obser
 
 ## Exercício 7
 
-Com base no projeto de exemplo resolva 2 dos CodeSmells apontos pelo SonarQube.
+Com base no projeto de exemplo resolva 2 dos CodeSmells apontados pelo SonarQube.
 
 Após finalizar faça a análise do código novamente utilizando o Maven e observe os resultados no SonarQube.
 
