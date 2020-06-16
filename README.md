@@ -82,9 +82,9 @@ Para responder essa pergunta leve em consideração a seguinte citação:
 
 *“Um programa bem escrito é um programa em que o custo de implementação de um recurso é constante ao longo de toda a vida do programa” – Itay Maman*
 
-Como uma introdução rápida, esta é a melhor definição de qualidade de código fonte. Fica ainda mais forte quando colocado o contrário: *um programa mal escrito é um programa onde o custo de implementação de uma característica cresce ao longo do tempo.*
+Como uma introdução rápida, esta é a melhor definição do por que gerenciar a qualidade de código fonte. Fica ainda mais forte quando colocado o contrário: *"um programa mal escrito é um programa onde o custo de implementação de uma característica cresce ao longo do tempo."*
 
-Com isso podemos compreender a importância da qualidade de código fonte.
+Com isso podemos compreender a importância do gerenciamento de qualidade de código fonte.
 
 
 
